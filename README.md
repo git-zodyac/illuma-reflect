@@ -1,6 +1,19 @@
-# @zodyac/illuma-reflect
+# @zodyac/illuma-reflect – Reflect Metadata Plugin for Illuma
+
+![NPM Version](https://img.shields.io/npm/v/%40zodyac%2Filluma-reflect)
+![NPM Downloads](https://img.shields.io/npm/dw/%40zodyac%2Filluma-reflect)
+![npm bundle size](https://img.shields.io/bundlephobia/min/%40zodyac%2Filluma-reflect)
+![Test coverage](./badges/coverage.svg)
 
 [Illuma](https://github.com/git-zodyac/illuma) plugin for reflect-metadata based dependency injection to declare dependencies via constructor parameters and decorators.
+
+> [!NOTE]
+> This package is in early development. Expect API changes in minor versions.
+
+## Features
+- Leverages `reflect-metadata` to automatically resolve constructor dependencies by type.
+- Provides `@Inject` decorator for token-based injection on properties and constructor parameters.
+- Supports optional dependencies via `@Optional` decorator.
 
 ## Installation
 
