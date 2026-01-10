@@ -1,10 +1,10 @@
 import type { Ctor, iInjectionNode, MultiNodeToken } from "@illuma/core";
 import {
   extractToken,
-  INJECTION_SYMBOL,
   isInjectable,
   NodeToken,
   nodeInject,
+  registerClassAsInjectable,
 } from "@illuma/core";
 import { ReflectInjectionError } from "../errors";
 import { INJECTED_PATH, OPTIONAL_PATH, PROPS_PATH } from "./metadata";
@@ -84,7 +84,7 @@ export function ReflectInjectable<T>() {
       },
     });
 
-    (ctor as any)[INJECTION_SYMBOL] = nodeToken;
+    registerClassAsInjectable(ctor, nodeToken);
     return ctor;
   };
 }

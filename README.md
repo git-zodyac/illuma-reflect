@@ -25,6 +25,13 @@ yarn add @illuma/core-reflect reflect-metadata
 npm install @illuma/core-reflect reflect-metadata
 ```
 
+## Compatibility
+
+| Package version               | Illuma Version         |
+|-------------------------------|------------------------|
+| `@illuma/core-reflect` ^1.0.0 | `@illuma/core` ^1.0.0  |
+| `@illuma/core-reflect` ^1.3.1 | `@illuma/core` ^1.3.1  |
+
 ## Usage
 
 This plugin provides decorators to enable reflection-based dependency injection with `@illuma/core`.
